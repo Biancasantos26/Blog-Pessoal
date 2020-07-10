@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pagina Inicial </title>
+        <link rel= " stylesheet" href="css/styles.css">
+        <script>
+            function myFunction() {
+                document.getElementById('txtalterar').innerHTML = "Olha so que legal";
+                 
+            }
+
+        
+        </script>
+    </head>
+    <body>
+        <!--Todo o código do exercício--> 
+        <!--Inicio do Menu superior-->
+        <ul>
+            <li><a class="active"href="index.html">Home</a></li>
+            <li><a href="sobremim.html">Sobre Mim</a></li>
+            <li><a href="contatar.html">Contatar</a></li>
+        </ul>
+        <!--Fim  do Menu superior-->
+        <!--Inicio do conteudo principal-->
+
+        <h1>Bem-vindo ao meu site</h1>
+        <p>Mais conhecido como blog,rs!</p>
+        <div class="flex container">
+            <div class="box"><img src="imagens/fotoaula3.jpg"  width="245px"/></div>
+            <div class="Box"> Bianca Santos,futura Programadora e Designer</div>
+
+        </div>
+        
+        <h2>Clique no Botao abaixo</h2>
+        <p id ="minhafunc">Oi galerinha!</p>
+        <button type ="button"onclick="minhafunc()">Clique aqui!</button>
+       <h3>Oportunidaes nao surgem, voce que as crias!</h3>
+        <div class="center">
+            <p></p>
+            <p id="txtalterar">Bianca Santos</p>
+            <button type="button" onclick="myFunction()">clique aqui!</button>
+        </div>
+        <p id="minhaid"></p>
+        <p id="somando"></p>
+        <p id="idnome"></p>
+            <!--Fim do conteudo principal-->
+             <!--Inicio do rodape-->
+             <footer>
+                 <h3> Todos os direitos reservados</h3>
+                 <button type="button"
+                 onclick="document.getElementById('minha data').innerHTML = Date()">
+                 clique no botao para mostrar a Data e Hora
+                </button>
+                <p id="minha data"></p>
+             </footer>
+             <!--Fim do Rodape-->
+             <script src="js/script.js"></script>
+       
+    </body>
+</html>
